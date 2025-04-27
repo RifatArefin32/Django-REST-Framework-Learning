@@ -51,12 +51,11 @@ DATABASES = {
 }
 ```
 
-Run migration
-```bash
-python3 manage.py migrate
-```
+## Create Custom User
 
-Run the runserver
-```bash
-python3 manage.py runserver
-```
+Django has its own `user` class with some possible . But if we want to add some custom fields then we have to create a custom user class. Note that this class has to be created before running our initial migration. 
+
+### Create an `app` Package
+First we will create an `app` packages where all the app modules will reside. 
+- First create a directory `apps` from the root directory
+- Create an `__init__.py` file which is important to make the dirctory as package
