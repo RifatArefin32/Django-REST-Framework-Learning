@@ -69,3 +69,19 @@ django-admin startapp accounts
 After creating the `account` app,
 - Update app name with package at `accounts/apps.py` in `package_name.app_name` format. 
 - Add the app name in `INSTALLED_APPS` array at `learn_drf/settings.py`.
+
+### Create CustomUser Model
+- Create a custom user model `CustomUser`  at `accounts/models.py`
+- Add the CustomUser model as default to the `learn_drf/settings.py`. Simply add `AUTH_USER_MODEL = 'accounts.CustomUser'`.
+
+### Run Migration and Start Server
+After creating custom user, new we create our first migration file and run migration
+```bash
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
+
+We can run our server using the following command.
+```bash
+python3 manage.py runserver
+```
