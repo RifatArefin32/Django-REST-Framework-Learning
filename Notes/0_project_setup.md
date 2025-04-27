@@ -59,3 +59,13 @@ Django has its own `user` class with some possible . But if we want to add some 
 First we will create an `app` packages where all the app modules will reside. 
 - First create a directory `apps` from the root directory
 - Create an `__init__.py` file which is important to make the dirctory as package
+
+### Create an App `accounts`
+Create an app inside the apps package. 
+```bash
+django-admin startapp accounts
+```
+
+After creating the `account` app,
+- Update app name with package at `accounts/apps.py` in `package_name.app_name` format. 
+- Add the app name in `INSTALLED_APPS` array at `learn_drf/settings.py`.
