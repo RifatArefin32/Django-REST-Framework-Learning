@@ -1,6 +1,6 @@
 import uuid 
 from django.db import models
-from accounts.models import CustomUser
+from apps.accounts.models import CustomUser
 
 # Product model
 class Product(models.Model):
