@@ -10,9 +10,9 @@ class CustomUser(AbstractUser):
     ], default='male')
     
     def save(self, *args, **kwargs):
-        if not self.user_id:
-            last_user = CustomUser.objects.order_by('-user_id').first()
-            self.user_id = (last_user.user_id + 1) if last_user and last_user.user_id else 1
+        if not self.id:
+            last_user = CustomUser.objects.order_by('-id').first()
+            self.id = (last_user.id + 1) if last_user and last_user.id else 1
         super().save(*args, **kwargs)
 
     def __str__(self):

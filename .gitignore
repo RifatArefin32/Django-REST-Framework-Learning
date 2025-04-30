@@ -1,0 +1,71 @@
+# Ignore all __pycache__ directories
+__pycache__/
+
+# Ignore all Python bytecode files
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Ignore other compiled Python files
+*.pkl
+
+# Ignore virtual environment directories
+env/
+venv/
+ENV/
+.venv/
+.env/
+*.env
+
+# Django migrations
+**/migrations/
+**/migrations/*.py
+**/migrations/*.pyc
+
+# Django static and media files
+staticfiles/
+static/
+media/
+
+# IDEs and editor folders
+.vscode/
+.idea/
+
+# macOS system files
+.DS_Store
+
+# Logs
+*.log
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# MyPy cache
+.mypy_cache/
+
+# Pytest cache
+.pytest_cache/
+
+# Test databases
+test*.sqlite3
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Docker-related files
+*.pid
+*.seed
+*.bak
+
+# Node modules (if you have frontend dependencies)
+node_modules/
+
+# System files (Windows)
+Thumbs.db
